@@ -1,0 +1,42 @@
+:root {
+  --navy: #1e2a47;
+  --navy-light: #2d3d63;
+  --saffron: #e8a23d;
+  --saffron-dark: #c9821f;
+  --cream: #fbf6ec;
+  --charcoal: #26272b;
+  --sage: #4c8c6b;
+  --clay: #c1584c;
+  --border: #e3dac9;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--cream);
+  color: var(--charcoal);
+  font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
