@@ -1,6 +1,27 @@
 # Canteeno — Canteen Management System (v2)
 
-A complete rewrite of the original Canteen Management System, built fresh rather than reconstructed, with a real ordering system and refreshed design.
+A complete rewrite of the original Canteen Management System, built fresh rather than reconstructed, with a real ordering system and a refreshed design.
+
+## Screenshots
+
+<table>
+<tr>
+<td width="50%"><img src="screenshots/01_canteeno_role_selection.png" width="100%"/><br/><sub><b>Role selection</b></sub></td>
+<td width="50%"><img src="screenshots/02_admin_overview.png" width="100%"/><br/><sub><b>Admin — overview</b></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="screenshots/03_admin_employees.png" width="100%"/><br/><sub><b>Admin — employees</b></sub></td>
+<td width="50%"><img src="screenshots/04_admin_menu.png" width="100%"/><br/><sub><b>Admin — menu management</b></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="screenshots/05_admin_orders.png" width="100%"/><br/><sub><b>Admin — orders</b></sub></td>
+<td width="50%"><img src="screenshots/06_employee_order_food.png" width="100%"/><br/><sub><b>Employee — order food</b></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="screenshots/07_employee_my_orders.png" width="100%"/><br/><sub><b>Employee — my orders</b></sub></td>
+<td width="50%"><img src="screenshots/08_employee_wallet.png" width="100%"/><br/><sub><b>Employee — wallet</b></sub></td>
+</tr>
+</table>
 
 ## What's new vs. the original
 
@@ -41,16 +62,18 @@ src/
 
 ## Running it locally
 
+Needs Node.js/npm installed (`node -v` to check).
+
 ```bash
 npm install
 npm start
 ```
 
-Opens at `http://localhost:3000`.
+Opens at `http://localhost:3000`. If the port's already taken, stop whatever's using it and re-run `npm start` — it won't pick a new port automatically.
 
 ## Verified working
 
-This was tested end-to-end with an automated browser test covering the full flow: landing → admin login → register employee → fund wallet ($100) → switch to employee → select employee → browse menu → add item to cart → place order → wallet correctly deducted ($100.00 → $80.01 for a $19.99 item) → order appears in history. Zero JavaScript errors throughout.
+Tested end-to-end covering the full flow: landing → admin login → register employee → fund wallet ($100) → switch to employee → select employee → browse menu → add item to cart → place order → wallet correctly deducted ($100.00 → $80.01 for a $19.99 item) → order appears in history. Zero console errors throughout.
 
 ## Ideas for further improvement
 
@@ -62,4 +85,4 @@ This was tested end-to-end with an automated browser test covering the full flow
 ## About me
 
 Mohit Raj, MCA graduate from RV College of Engineering.
-[GitHub](https://github.com/mohitrajjj) · [LinkedIn](https://linkedin.com/in/mohit-rajj)
+[GitHub](https://github.com/mohitrajjj) · [LinkedIn](https://linkedin.com/in/mohit-rajj) · [LeetCode](https://leetcode.com/u/vduZBjuexI/)
