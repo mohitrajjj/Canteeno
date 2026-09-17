@@ -245,7 +245,7 @@ export default function EmployeePortal({ onLogout }) {
                 <div key={o.id} style={{ padding: "10px 0", borderBottom: "1px solid var(--border)" }}>
                   <div style={{ display: "flex", justifyContent: "space-between" }}>
                     <div style={{ fontSize: "0.85rem", color: "#8a8a8a" }}>{o.createdAt}</div>
-                    <div style={{ fontWeight: 700, color: "var(--sage)" }}>$ototal.toFixed(2)}</div>
+                    <div style={{ fontWeight: 700, color: "var(--sage)" }}>${o.total.toFixed(2)}</div>
                   </div>
                   <div style={{ fontSize: "0.88rem" }}>{o.items.map((i) => `${i.name} x${i.qty}`).join(", ")}</div>
                 </div>
